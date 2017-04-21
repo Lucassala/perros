@@ -42,9 +42,9 @@ public class BaseDatos {
     private String userJose = "root";
     private String passwordJose = "mypassword";
 
-    private String conexionJorge = "jdbc:mysql://localhost:6603/pupi";
+    private String conexionJorge = "jdbc:mysql://localhost:3306/pupi";
     private String userJorge = "root";
-    private String passwordJorge = "mypassword";
+    private String passwordJorge = "constable_07";
 
     private String conexionPaolo = "jdbc:mysql://localhost:3306/pupi";
     private String userPaolo = "root";
