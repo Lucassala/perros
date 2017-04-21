@@ -30,10 +30,12 @@ public class ApplicationConfig extends Application {
      * out calling this method in getClasses().
      */
     private void addRestResourceClasses(Set<Class<?>> resources) {
+        resources.add(controlador.CalificacionREST.class);
         resources.add(controlador.EjecutablesREST.class);
         resources.add(controlador.JsonMoxyConfigurationContextResolver.class);
         resources.add(controlador.PerroREST.class);
         resources.add(controlador.RazaFacadeREST.class);
+        resources.add(controlador.ReservaREST.class);
     }
 
 }

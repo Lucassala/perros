@@ -6,7 +6,7 @@
 package persistencia;
 
 import java.util.List;
-import modelo.Califiacion;
+import modelo.Calificacion;
 import modelo.Dueno;
 import modelo.Raza;
 import modelo.Reserva;
@@ -15,10 +15,10 @@ import modelo.Reserva;
  *
  * @author agile
  */
-public class CalificacionDAO extends DAO<Califiacion> {
+public class CalificacionDAO extends DAO<Calificacion> {
 
     public CalificacionDAO() throws Exception {
-        super(Califiacion.class);
+        super(Calificacion.class);
         cargarDatos();
     }
 
@@ -28,7 +28,7 @@ public class CalificacionDAO extends DAO<Califiacion> {
             ReservaDAO reservaDAO = new ReservaDAO();
             List<Reserva> findAllReservas = reservaDAO.findAll();
 
-            Califiacion califiacion = new Califiacion();
+            Calificacion califiacion = new Calificacion();
             califiacion.setPuntaje(5);
             califiacion.setComentario("Muy recomendadro porque volvio mi perro contento");
             califiacion.setReserva(findAllReservas.remove(0));
