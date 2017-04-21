@@ -25,7 +25,7 @@ public class Perro implements Serializable {
     private String nombre;
     @OneToOne(cascade = CascadeType.ALL)
     private Raza raza;
-    @OneToOne(cascade = CascadeType.ALL)
+    @OneToOne(cascade = CascadeType.ALL) //deberia ser Merge
     private Tamanio tamanio;
     @OneToOne(cascade = CascadeType.ALL)
     private Dueno dueno;
